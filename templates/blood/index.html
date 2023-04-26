@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .xyz{
+          margin-bottom: 0px;
+          background-image: url('{% static "image/blood.jpg" %}');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .title-style{
+          font-size: 40px!important;
+          color:white!important;
+          font-weight: bolder!important;
+          text-shadow: 2px 2px #ff0000;
+          margin-top:10%
+        }
+      </style>
+      
+</head>
+
+
+<body>
+  {% include "blood/navbar.html" %}
+<br>
+
+
+<section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+    <div class="container text-center">
+      <p class="lead text-center title-style">Welcome To Blood Bank Management System</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     
+      
+      <br><br><br><br>
+      
+    </div>  
+  </section>
+
+  {% include "blood/footer.html" %}
+
+
+</body>
+
+</html>
